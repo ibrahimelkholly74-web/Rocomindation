@@ -17,8 +17,8 @@ st.title("🎬 Hybrid Movie Recommendation System")
 # Load data
 # -----------------------------
 
-BASE_DIR = Path("C:/Users/H P/Downloads/Recomindation System")
-BASE_DIR = Path(BASE_DIR)
+BASE_DIR = Path(__file__).parent
+
 movies = pd.read_csv(BASE_DIR / "movies.csv")
 ratings = pd.read_csv(BASE_DIR / "ratings.csv")
 
