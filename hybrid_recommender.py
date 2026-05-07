@@ -16,7 +16,6 @@ st.title("🎬 Hybrid Movie Recommendation System")
 # -----------------------------
 # Load data
 # -----------------------------
-
 BASE_DIR = Path(__file__).parent
 
 movies = pd.read_csv(BASE_DIR / "movies.csv")
@@ -30,6 +29,8 @@ with open(BASE_DIR / "pred_matrix.pkl", "rb") as f:
 
 with open(BASE_DIR / "indices.pkl", "rb") as f:
     indices = pickle.load(f)
+
+
 
 # -----------------------------
 # Normalize function
